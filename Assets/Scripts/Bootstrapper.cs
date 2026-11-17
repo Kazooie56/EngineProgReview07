@@ -12,7 +12,7 @@ public class Bootstrapper : MonoBehaviour
             return;
         }
 
-        // Need to initialize the UIManager first since GameStateManager needs it to exist first.
+        // GameStateManager.SetState() sends an action out to UIManager, It needs to be initialized before that can happen.
         UIManager.Instance.Initialize();
 
         Debug.Log("All managers found, loading Main Menu and setting game state.");
