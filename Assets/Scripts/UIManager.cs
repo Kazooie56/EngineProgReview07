@@ -38,8 +38,6 @@ public class UIManager : MonoBehaviour
         }
     }
 
-
-
     // every time a scene is loaded, it passes each UI it has thanks to the UIPanelSender
     // UIManager only updates the UI for UI within a scene, everything else is returned as null.
     // The older UI becomens a destroyed object because the scene containing it was unloaded, treating them as null, which skips those
